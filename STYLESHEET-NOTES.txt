@@ -1,0 +1,19 @@
+3.4.2. Stylesheets
+
+A theme can have one or more stylesheets. To add a stylesheet create a file in the <THEME TYPE>/resources/css directory of your theme. Then add it to the styles property in theme.properties.
+
+For example to add styles.css to the mytheme create themes/mytheme/login/resources/css/styles.css with the following content:
+
+.login-pf body {
+    background: DimGrey none;
+}
+
+Then edit themes/mytheme/login/theme.properties and add:
+
+styles=css/styles.css
+
+To see the changes open the login page for your realm. You will notice that the only styles being applied are those from your custom stylesheet. To include the styles from the parent theme you need to load the styles from that theme as well. Do this by editing themes/mytheme/login/theme.properties and changing styles to:
+
+styles=node_modules/patternfly/dist/css/patternfly.css node_modules/patternfly/dist/css/patternfly-additions.css lib/zocial/zocial.css css/login.css css/styles.css
+
+	To override styles from the parent stylesheets it’s important that your stylesheet is listed last. 

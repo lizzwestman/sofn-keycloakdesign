@@ -1,0 +1,26 @@
+/*   keycloak design override  5.4.19 
+
+order of the css in the page -- the updated/override style.css for sofn has to be after all of these 
+
+------------------------------------------------------------------------------------- */ 
+
+1.  https://kc.sofn.com/auth/resources/4.6.0.final/login/sofnCustom/node_modules/patternfly/dist/css/patternfly.css
+
+2. https://kc.sofn.com/auth/resources/4.6.0.final/login/sofnCustom/node_modules/patternfly/dist/css/patternfly-additions.css
+
+3. https://kc.sofn.com/auth/resources/4.6.0.final/login/sofnCustom/lib/zocial/zocial.css
+
+4. https://kc.sofn.com/auth/resources/4.6.0.final/login/sofnCustom/css/login.css
+
+
+
+urls are self-hosted on the new wp site in a secret folder and are as such: 
+
+1. http://lizzwestman.net/client/keycloak/css/patternfly.css
+
+2. http://lizzwestman.net/client/keycloak/css/patternfly-additions.css
+
+3. http://lizzwestman.net/client/keycloak/css/zocial.css
+
+4. http://lizzwestman.net/client/keycloak/css/login.css
+
